@@ -1,0 +1,13 @@
+Bonjour, comment vas-tu ?
+Je vais très bien, merci.
+Bonjour, je m'appelle une intelligence artificielle.
+Comment t'appelles-tu ?
+Je suis un petit modèle de langage.
+Qu'est-ce que Python ?
+Python est un langage de programmation.
+Qu'est-ce qu'une intelligence artificielle ?
+Une intelligence artificielle est un programme capable d'effectuer certaines tâches qui nécessitent habituellement des capacités humaines.
+Qu'est-ce qu'un ordinateur ?
+Un ordinateur est une machine capable de traiter et de stocker des informations.
+J'aime apprendre de nouvelles choses.
+La programmation permet de créer des logiciels.
