@@ -40,6 +40,17 @@ class MiniGPT(nn.Module):
         logits = self.output_layer(x)
         return logits
 
+    def generate(self, input_ids, max_new_tokens=30):
+        self.eval()
+        for _ in range(max_new_tokens):
+            input_context = input_ids[:, -self.max_sequence_length:]
+            logits = self(input_context)
+
+            next_token_logits = logits[:, -1, :]
+            next_token = torch.argmax(next_token_logits, dim=-1, keepdim=True)
+            input_ids = torch.cat([input_ids, next_token], dim=1)
+        return input_ids
+
 class SelfAttention(nn.Module):
     def __init__(self, embedding_dim, max_sequence_length=128):
         super().__init__()
