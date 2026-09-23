@@ -21,11 +21,10 @@ SEQUENCE_LENGTH = 32
 EMBEDDING_DIM = 128
 NUM_LAYERS = 4
 LEARNING_RATE = 3e-4
-BATCH_SIZE = 64  # Bon point de départ pour une GTX 1660 Super (6 Go).
+BATCH_SIZE = 64  # Bon point de départ pour une GTX 1660 Super (6 Go) par exemple.
 NUM_WORKERS = 0  # Ne pas dupliquer le très gros dataset en mémoire.
 RESUME = True
 SEED = 42
-
 
 def choose_device() -> torch.device:
     if torch.cuda.is_available():
